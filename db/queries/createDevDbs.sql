@@ -1,0 +1,2 @@
+CREATE DATABASE goob_dev;
+CREATE DATABASE goob_test;
