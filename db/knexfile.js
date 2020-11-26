@@ -46,6 +46,6 @@ const environtmentDb = {
   },
 };
 
-const environment = process.env.ENVIRONMENT || 'development';
+const environment = process.env.NODE_ENV || 'development';
 
 module.exports = environtmentDb[environment];

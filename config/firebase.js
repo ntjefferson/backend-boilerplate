@@ -28,7 +28,7 @@ const firebaseConfig = {
   },
 };
 
-const environment = process.env.ENVIRONMENT || 'development';
+const environment = process.env.NODE_ENV || 'development';
 
 const firebaseAdmin = admin.initializeApp({
   credential: admin.credential.cert(firebaseConfig[environment]),
