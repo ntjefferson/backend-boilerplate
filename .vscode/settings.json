@@ -3,5 +3,6 @@
     "source.fixAll.eslint": true
   },
   "eslint.validate": ["javascript"],
-  "javascript.suggestionActions.enabled": false
+  "javascript.suggestionActions.enabled": false,
+  "files.eol": "\n"
 }
