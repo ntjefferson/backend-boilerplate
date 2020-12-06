@@ -19,7 +19,7 @@ app.use(express.urlencoded({ extended: true }));
 app.use(successLogger);
 
 // Start of routes
-app.use('/api', require('./api'));
+app.use('/v1', require('./api/v1'));
 
 // Error handler
 app.use((err, req, res, next) => {

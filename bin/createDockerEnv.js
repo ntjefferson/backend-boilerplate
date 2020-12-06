@@ -1,5 +1,6 @@
 #!/usr/bin/env node
 /* eslint-disable no-console */
+process.env.DEV_DB_HOST = 'localhost';
 
 const { execSync } = require('child_process');
 

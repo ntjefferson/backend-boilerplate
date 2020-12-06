@@ -1,7 +1,8 @@
 const knex = require('knex');
+const { knexSnakeCaseMappers } = require('objection');
 const knexConfig = require('./knexfile');
 
-const db = knex(knexConfig);
+const db = knex({ ...knexConfig, ...knexSnakeCaseMappers() });
 
 db.on('query-error', (err, obj) => {
   const error = {};

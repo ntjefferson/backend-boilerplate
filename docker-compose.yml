@@ -10,9 +10,7 @@ services:
     ports:
       - "5432:5432"
   api:
-    build: 
-      context: .
-      args: [ "DEV_DB_HOST=db"]
+    build: .
     command: "./bin/sh/wait-for-it.sh db:5432 -- npm run server"
     volumes:
       - ./:/app
